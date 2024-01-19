@@ -1,8 +1,6 @@
-
-
 mainNaive: cmp.o naive.o readFile.o
 
-mainKMP: compnext.o readFile.o
+mainKMP: cmp.o compnext.o kmp.o readFile.o
 
 clean:
-	rm -f *.o mainNaive
+	rm -f *.o mainNaive mainKMP
